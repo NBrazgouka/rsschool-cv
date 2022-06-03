@@ -1,1 +1,1 @@
-https://NBrazgouka.github.io/rsschool-cv/cv
+https://NBrazgouka.github.io/rsschool-cv/
