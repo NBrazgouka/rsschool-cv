@@ -1,1 +1,110 @@
-layout
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>cv</title>
+</head>
+<body>
+  <header class="header">
+      <div class="container">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            </ul>
+          </nav>
+      </div>
+  </header>  
+  <main class="main">
+      <div class="main-container">
+            <section class="section" id="profile">
+                <div class="photo">
+                    <img src="./assets/photo1-round.png" alt="photo">
+                </div>
+                <div class="about-me">
+                    <h1>Nadzeya Brazgouka, RS School trainee</h1>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="contact">Location: Minsk, Belarus</li>
+                    <li class="contact">E-mail: 5768862@gmail.com</li>
+                    <li class="contact">Telegram: Nadzeya</li>
+                    <li class="contact">Discord: Nadzeya#2541</li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+              <h2 class="section-title">Summary</h2>
+               <p class="text">I have working experience as accountant, after retraining I’ve changed my job to software testing engineer. Attend RS School in order to gain new skills.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skill">HTML</li>  
+                <li class="skill">CSS</li>
+                <li class="skill">Javascript</li>
+                <li class="skill">Git</li>
+                <li class="skill">Functional testing</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+            <p class="text">Creation of function that fulfills array with 10 random integer values and returns a multiple of 3 greatest values:</p>
+            <code>
+                const random = []; <br>
+                for (let i=0; i<10; i++) {
+                random [i] = Math.floor(Math.random() * 51);
+                 } <br>
+                console.log(random); <br>
+                random.sort(function(a, b){return b-a}); <br>
+                console.log(random); <br>
+                const three = random.slice(0,3); <br>
+                console.log(three); <br>
+                const multiply = three.reduce((total, amount) => total * amount); <br>
+                console.log(multiply);
+            </code>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <a class="cv-link" href="https://nbrazgouka.github.io/rsschool-cv/cv" target="_blank">CV Markdown</a>
+        </section>
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <p class="text">Belarusian State University</p>
+        </section>
+        <section class="section" id="english">
+            <h2 class="section-title">English</h2>
+            <p class="text">Level B2, Upper-Intermediate</p>
+        </section>
+      </div>
+  </main>
+  <footer class="footer">
+      <div class="container">
+          <div> 
+              2022
+              <a class="github-link" href="https://github.com/NBrazgouka" target="_blank">Github NBrazgouka</a>
+          </div>
+          <div class="course-link">
+            <a href="https://rs.school/js/" target="_blank">
+                <div class="logo">
+                  <img src="./assets/rs_school_js.svg" alt="logo">
+                </div>
+              </a>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>

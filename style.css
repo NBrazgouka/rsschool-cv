@@ -1,1 +1,106 @@
-  /* CSS код */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: radial-gradient(100% 215.42% at 0% 0%, #edebfc 0%, #cec8ee 100%), #cec8ee;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  background-color: #cec8ee;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 60px;
+  line-height: 50px;
+  transition: .3s;
+  text-decoration: none;
+  color: #4a3877;
+}
+
+.nav-link:hover {
+  color:#de9204;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.section {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.about-me {
+  color: #4a3877;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #4a3877;
+}
+
+.cv-link {
+  text-decoration: none;
+  color: black;
+}
+
+.cv-link:hover {
+  color:#de9204;
+}
+
+.footer {
+  background-color: #cec8ee;
+}
+
+.github-link {
+  text-decoration: none;
+  font-size: 17px;
+  color: #4a3877;
+}
+
+.github-link:hover {
+  color:#de9204;
+}
+
+.logo {
+  width: 60px;
+  height: 18px;
+}
